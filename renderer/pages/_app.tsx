@@ -15,7 +15,7 @@ type AppPropsWithLayout = AppProps & {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
   return (
-    <div className="font-nunito-sans">
+    <div className="font-nunito-sans h-screen">
       {getLayout(<Component {...pageProps} />)}
     </div>
   );
